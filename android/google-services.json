@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247721447094",
+    "project_id": "adminrussia-6a3d0",
+    "storage_bucket": "adminrussia-6a3d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247721447094:android:e47ec7ecf0a5f4c7cf6017",
+        "android_client_info": {
+          "package_name": "com.example.admin_russia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247721447094-on2i10m6qp1jebupovs4sm3lrv7ovbji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQhCxuD4PUHk6_gkjSW4PyKdUnhxHtCYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247721447094-on2i10m6qp1jebupovs4sm3lrv7ovbji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
