@@ -1,22 +1,24 @@
+
 import 'package:admin_russia/screen/detail_screen.dart';
 import 'package:admin_russia/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(
-      MaterialApp(
-        home: HomeScreen(),
-        routes: {
-          HomeScreen.routeName: (context) =>
-          const HomeScreen(),
+    MaterialApp(
+      home: HomeScreen(),
+      routes: {
+        HomeScreen.routeName: (context) =>
+        const HomeScreen(),
 
-        },
-        onGenerateRoute: generateRoute,
-        onUnknownRoute: (settings) => MaterialPageRoute(
-          builder: (context) => const Text('Unknown route'),
-        ),
-
+      },
+      onGenerateRoute: generateRoute,
+      onUnknownRoute: (settings) => MaterialPageRoute(
+        builder: (context) => const Text('Unknown route'),
       ),
+    ),
+
   );
 
   }

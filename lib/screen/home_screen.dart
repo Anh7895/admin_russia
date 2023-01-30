@@ -26,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Home'),
         centerTitle: true,
@@ -44,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView.separated(itemBuilder: (BuildContext context, int index){
         final ProductItem item = productItems[index];
         return ListTile(
-          title: Text( '${index+1}' +" "+ "No: " + item.no +" - "+ "Star: " + item.star +" - "+ "Eric: "+ item.eric +" - "+"Time: " + item.time +" - "+ 'Unit:'+ "${item.unit}"  ),
+          title: Text( '${index+1}' +"    "+ "No: " + item.no +" - "+ "Star: " + item.star +" - "+ "Eric: "+ item.eric +" - "+"Time: " + item.time +" - "+ 'Unit:'+ "${item.unit.toInt()}"  ,style: TextStyle(color: Colors.white),),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -60,11 +61,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 setState(() {
                   productItems.remove(item);
                 });
-              }, icon: Icon(Icons.delete))
+              }, icon: Icon(Icons.delete, color: Colors.red,))
             ],
           ),
         );
-      }, separatorBuilder: (BuildContext context, int index) => Divider(), itemCount: productItems.length),
+      }, separatorBuilder: (BuildContext context, int index) => Divider(color: Colors.white,), itemCount: productItems.length),
 
     );
   }

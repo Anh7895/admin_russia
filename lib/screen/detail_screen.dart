@@ -13,6 +13,8 @@ class DetailScreen extends StatefulWidget {
 
 class _DetailScreenState extends State<DetailScreen> {
   final _formKey = GlobalKey<FormState>();
+  var _editProduct = ProductItem(no: "", eric: "", unit: 0, star: "", time: "");
+  var _isInit = true;
   final Map<String,dynamic> _initValue ={
     'no':'',
     'id':'-1',

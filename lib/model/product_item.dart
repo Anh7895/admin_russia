@@ -1,4 +1,5 @@
-class ProductItem {
+import 'package:flutter/material.dart';
+class ProductItem  {
 
   final String no;
   final String eric;
